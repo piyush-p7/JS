@@ -14,6 +14,7 @@ function solve(){
             if(err){
                 console.log("ERROR: "+ err.message);
                 solve();
+                readline.close();
             }
             else{
                 console.log("Add: "+solution.add());
@@ -25,4 +26,5 @@ function solve(){
     });
     
 }
+
 solve();
