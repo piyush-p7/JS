@@ -13,7 +13,7 @@ function solve(){
           rect(x, y, (err, solution)=>{
             if(err){
                 console.log("ERROR: "+ err.message);
-                readline.close();
+                solve();
             }
             else{
                 console.log("Add: "+solution.add());
