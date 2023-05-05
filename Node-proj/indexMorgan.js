@@ -56,7 +56,7 @@ app.post('/dishes/:dishID', (req, res, next) => {
 });
 
 app.put('/dishes/:dishID', (req, res, next)=>{
-    res.write('Updating the dish'+req.params.dishID+'\n');
+    res.write('Updating the dish:'+req.params.dishID+'\n');
     res.end("Will update the dish: "+req.body.name + ', with details '+req.body.description);
 });
 
